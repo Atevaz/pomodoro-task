@@ -4,8 +4,8 @@ enum SessionType { focus, shortBreak }
 
 SessionType defaultSessionType = SessionType.focus ;
 
-int defaultFocusTime = 1 * 2 ;
-int defaultBreakTime = 1 * 2 ;
+int defaultFocusTime = 25 * 60 ;
+int defaultBreakTime = 5 * 60 ;
 int defaultBreakPomodoroCycles = 2 ;
 
 List<int> focusDurationList = [15, 25, 30, 45] ;
