@@ -124,19 +124,19 @@ flutter run
 
 ## How to Use
 
-### 1. Launch the app.
+###### 1. Launch the app.
 
-### 2. Adjust the session durations from the settings screen (if needed).
+###### 2. Adjust the session durations from the settings screen (if needed).
 
-### 3. Start the Pomodoro timer from the main screen.
+###### 3. Start the Pomodoro timer from the main screen.
 
-### 4. Follow the focus and break intervals as displayed.
+###### 4. Follow the focus and break intervals as displayed.
 
-### 5. Restart a new session manually after completing 2 cycles
+###### 5. Restart a new session manually after completing 2 cycles
 
 ## State Management
 
-The app uses Cubit for state management to handle timer states and UI updates efficiently.
+###### The app uses Cubit for state management to handle timer states and UI updates efficiently.
 
 ## Deliverables
 
@@ -148,8 +148,8 @@ The app uses Cubit for state management to handle timer states and UI updates ef
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+###### This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact
 
-For questions or support, please contact [Amr Ramadan/amrramadan0106532@gmail.com].
+###### For questions or support, please contact [Amr Ramadan/amrramadan0106532@gmail.com].
