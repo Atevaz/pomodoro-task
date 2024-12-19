@@ -8,7 +8,7 @@ This is a simple yet functional Pomodoro Timer application built using Flutter. 
 
 ## Core Functionality
 
-1. Pomodoro Timer Logic:
+### 1. Pomodoro Timer Logic:
 
    - 25-minute focus/work session.
 
@@ -16,27 +16,27 @@ This is a simple yet functional Pomodoro Timer application built using Flutter. 
 
    - No automatic long break after 2 cycles; users must manually start a new session.
 
-2. Customizable Durations:
+### 2. Customizable Durations:
 
    - Users can adjust the duration of focus and break sessions from the settings screen.
 
-3. Session Restart Option:
+### 3. Session Restart Option:
 
 - Option to restart a new Pomodoro session after completing 2 cycles.
 
 ## User Interface
 
-1. Main Screen:
+### 1. Main Screen:
 
    - Countdown Timer: Displays the remaining time for the current session (focus or break).
 
    - Session Status Header: Indicates the type of the current session (e.g., "Focus Session" or "Short Break").
 
-2. Settings Screen:
+### 2. Settings Screen:
 
    - Input fields or sliders to customize focus and break durations.
 
-3. Additional Details:
+### 3. Additional Details:
 
    - Clean and responsive design optimized for different screen sizes.
 
