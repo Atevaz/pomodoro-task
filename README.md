@@ -1,104 +1,133 @@
-Pomodoro Timer Application
+# Pomodoro Timer Application
 
-Description
+## Description
 
 This is a simple yet functional Pomodoro Timer application built using Flutter. The application helps users follow the Pomodoro technique to boost productivity and maintain focus. It includes customizable work and break durations, session tracking, and an intuitive user interface.
 
-Features
+## Features
 
-Core Functionality
+## Core Functionality
 
-Pomodoro Timer Logic:
+1. Pomodoro Timer Logic:
 
-25-minute focus/work session.
+- 25-minute focus/work session.
 
-5-minute short break.
+- 5-minute short break.
 
-No automatic long break after 2 cycles; users must manually start a new session.
+- No automatic long break after 2 cycles; users must manually start a new session.
 
-Customizable Durations:
+2. Customizable Durations:
 
-Users can adjust the duration of focus and break sessions from the settings screen.
+- Users can adjust the duration of focus and break sessions from the settings screen.
 
-Session Restart Option:
+3. Session Restart Option:
 
-Option to restart a new Pomodoro session after completing 2 cycles.
+- Option to restart a new Pomodoro session after completing 2 cycles.
 
-User Interface
+## User Interface
 
-Main Screen:
+1. Main Screen:
 
-Countdown Timer: Displays the remaining time for the current session (focus or break).
+- Countdown Timer: Displays the remaining time for the current session (focus or break).
 
-Session Status Header: Indicates the type of the current session (e.g., "Focus Session" or "Short Break").
+- Session Status Header: Indicates the type of the current session (e.g., "Focus Session" or "Short Break").
 
-Settings Screen:
+2. Settings Screen:
 
-Input fields or sliders to customize focus and break durations.
+- Input fields or sliders to customize focus and break durations.
 
-Additional Details:
+3. Additional Details:
 
-Clean and responsive design optimized for different screen sizes.
+- Clean and responsive design optimized for different screen sizes.
 
-Visual distinction between work and break sessions (e.g., color changes).
+- Visual distinction between work and break sessions (e.g., color changes).
 
-Installation
+## Table of contents
+- ### [main packages used =>](#main-packages-used)
+- ### [Folder structure =>](#folder-structure)
+- ### [Screenshots =>](#screenshots)
+- ### [Demo video =>](#demo-video)
 
-Clone the repository:
+## Main packages used
+- [dio](https://pub.dev/packages/dio) to make integration with API
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) as state management
+- [shared_preferences](https://pub.dev/packages/shared_preferences) to handle caching data
+- [flutter_screenutil](https://pub.dev/packages/flutter_screenutil) to make the application responsive
+- [google_maps_flutter](https://pub.dev/packages/google_maps_flutter) to use Google map
+- [internet_connection_checker](https://pub.dev/packages/internet_connection_checker) to handle internet connection
+- [get_it](https://pub.dev/packages/get_it) to make dependency injection
+- [location](https://pub.dev/packages/location) to get user's location
+- [image_picker](https://pub.dev/packages/image_picker) to pick image from mobile storage
+- [easy_localization](https://pub.dev/packages/easy_localization) to handle localization
 
-git clone <repository_url>
+## Folder structure
+We have applied clean archeticture concept and here is the basic folder structure:
 
-Navigate to the project directory:
+core folder structure that flutter provides:
 
-cd pomodoro_timer
+```
+hotel-booking
+├── android
+├── assets
+├── build
+├── ios
+├── lib
+└── test
+```
 
-Get dependencies:
+Here is the folder structure we have been using in this project:
+```
+lib
+├── business_logic
+├── core
+├── data
+├── presentation
+└── main.dart
+```
 
-flutter pub get
+### business_logic
+This folder containes the business logic of the application specificly state management.
 
-Run the app:
+```
+business_logic
+├── booking_cubit
+├── global_cubit
+├── hotel_cubit
+├── user_cubit
+├── bloc_observer.dart
+└── business_logic.dart
+```
 
-flutter run
+### core
+This folder contains all services and tools related to the application
+```
+core
+├── constant               
+├── di                      
+├── dio_service             
+├── exceptions             
+├── network_service         
+├── router                  
+├── shared_preferences      
+├── styles                  
+└── utils                   
+```
 
-How to Use
+### data
+This folder contains all data and operations done to that data
+```
+data
+├── local
+├── model
+├── remote
+└── repository
+```
 
-Launch the app.
-
-Adjust the session durations from the settings screen (if needed).
-
-Start the Pomodoro timer from the main screen.
-
-Follow the focus and break intervals as displayed.
-
-Restart a new session manually after completing 2 cycles.
-
-State Management
-
-The app uses Cubit for state management to handle timer states and UI updates efficiently.
-
-Development Notes
-
-Dynamic Transitions:
-
-Automatic transitions between focus and break sessions upon timer completion.
-
-Input Validation:
-
-Validation implemented to ensure that customizable durations are within acceptable ranges.
-
-Deliverables
-
-Fully functional Pomodoro Timer application with the described features.
-
-Clean, modular code with proper comments.
-
-This README file explaining how to run and test the application.
-
-License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
-
-Contact
-
-For questions or support, please contact [Amr/amrramadan0106532@gmail.com].
-
+### presentation
+This folder containes everything related to the screen of the application.
+```
+presentation
+├── screens
+├── view
+└── widget
+```
