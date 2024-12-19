@@ -33,17 +33,17 @@ class TimerView extends StatelessWidget {
                   ? null
                   : Colors.grey,
             ),
-            SizedBox(width: 10.w),
-            MyButton(
-              onTap: TimerCubit.get(context).stopwatch != null &&
-                      TimerCubit.get(context).stopwatch!.isRunning
-                  ? TimerCubit.get(context).stopTimer
-                  : () {},
-              title: "Pause",
-              width: 100.w,
-              height: 30.h,
-              color: AppColor.redColor,
-            ),
+            // SizedBox(width: 10.w),
+            // MyButton(
+            //   onTap: TimerCubit.get(context).stopwatch != null &&
+            //           TimerCubit.get(context).stopwatch!.isRunning
+            //       ? TimerCubit.get(context).stopTimer
+            //       : () {},
+            //   title: "Pause",
+            //   width: 100.w,
+            //   height: 30.h,
+            //   color: AppColor.redColor,
+            // ),
           ],
         ),
       ],
