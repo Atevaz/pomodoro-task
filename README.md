@@ -152,4 +152,4 @@ flutter run
 
 ## Contact
 
-###### For questions or support, please contact [Amr Ramadan/amrramadan0106532@gmail.com].
+###### For questions or support, please contact [Amr Ramadan / amrramadan0106532@gmail.com].
