@@ -42,92 +42,50 @@ This is a simple yet functional Pomodoro Timer application built using Flutter. 
 
    - Visual distinction between work and break sessions (e.g., color changes).
 
-## Table of contents
-- ### [main packages used =>](#main-packages-used)
-- ### [Folder structure =>](#folder-structure)
-- ### [Screenshots =>](#screenshots)
-- ### [Demo video =>](#demo-video)
+
 
 ## Main packages used
-- [dio](https://pub.dev/packages/dio) to make integration with API
 - [flutter_bloc](https://pub.dev/packages/flutter_bloc) as state management
 - [shared_preferences](https://pub.dev/packages/shared_preferences) to handle caching data
 - [flutter_screenutil](https://pub.dev/packages/flutter_screenutil) to make the application responsive
-- [google_maps_flutter](https://pub.dev/packages/google_maps_flutter) to use Google map
-- [internet_connection_checker](https://pub.dev/packages/internet_connection_checker) to handle internet connection
-- [get_it](https://pub.dev/packages/get_it) to make dependency injection
-- [location](https://pub.dev/packages/location) to get user's location
-- [image_picker](https://pub.dev/packages/image_picker) to pick image from mobile storage
-- [easy_localization](https://pub.dev/packages/easy_localization) to handle localization
+
 
 ## Folder structure
-We have applied clean archeticture concept and here is the basic folder structure:
-
-core folder structure that flutter provides:
-
-```
-hotel-booking
-├── android
-├── assets
-├── build
-├── ios
-├── lib
-└── test
-```
 
 Here is the folder structure we have been using in this project:
 ```
 lib
-├── business_logic
-├── core
-├── data
+├── cubit
 ├── presentation
+├── utils
 └── main.dart
 ```
 
-### business_logic
+### cubit
 This folder containes the business logic of the application specificly state management.
 
 ```
-business_logic
-├── booking_cubit
-├── global_cubit
-├── hotel_cubit
-├── user_cubit
-├── bloc_observer.dart
-└── business_logic.dart
-```
-
-### core
-This folder contains all services and tools related to the application
-```
-core
-├── constant               
-├── di                      
-├── dio_service             
-├── exceptions             
-├── network_service         
-├── router                  
-├── shared_preferences      
-├── styles                  
-└── utils                   
-```
-
-### data
-This folder contains all data and operations done to that data
-```
-data
-├── local
-├── model
-├── remote
-└── repository
+cubit
+├── timer_cubit
+└── bloc_observer.dart
 ```
 
 ### presentation
-This folder containes everything related to the screen of the application.
+This folder containes everything related to the screens of the application.
+
 ```
 presentation
 ├── screens
 ├── view
 └── widget
+```
+
+### utils
+This folder contains everything related to Application.
+
+```
+utils
+├── app_color.dart
+├── cach_helper.dart
+└── constants.dart
 ```
