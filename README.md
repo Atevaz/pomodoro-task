@@ -54,7 +54,7 @@ customizable work and break durations, session tracking, and an intuitive user i
 
 ## Folder structure
 
-Here is the folder structure we have been using in this project:
+###### Here is the folder structure we have been using in this project:
 
 ```
 lib
@@ -66,7 +66,7 @@ lib
 
 ### cubit
 
-This folder containes the business logic of the application specificly state management.
+###### This folder containes the business logic of the application specificly state management.
 
 ```
 cubit
@@ -76,7 +76,7 @@ cubit
 
 ### presentation
 
-This folder containes everything related to the screens of the application.
+###### This folder containes everything related to the screens of the application.
 
 ```
 presentation
@@ -87,7 +87,7 @@ presentation
 
 ### utils
 
-This folder contains everything related to Application.
+###### This folder contains everything related to Application.
 
 ```
 utils
@@ -98,25 +98,25 @@ utils
 
 ## Installation
 
-### 1. Clone the repository:
+##### 1. Clone the repository:
 
 ```
 git clone https://github.com/Atevaz/pomodoro-task.git
 ```
 
-### 2. Navigate to the project directory:
+##### 2. Navigate to the project directory:
 
 ```
 cd pomodoro_timer
 ```
 
-### 3. Get dependencies:
+##### 3. Get dependencies:
 
 ```
 flutter pub get
 ```
 
-### 4. Run the app:
+##### 4. Run the app:
 
 ```
 flutter run
