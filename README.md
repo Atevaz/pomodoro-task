@@ -140,11 +140,11 @@ The app uses Cubit for state management to handle timer states and UI updates ef
 
 ## Deliverables
 
-### 1. Fully functional Pomodoro Timer application with the described features.
+    ### 1. Fully functional Pomodoro Timer application with the described features.
 
-### 2. Clean, modular code with proper comments.
+    ### 2. Clean, modular code with proper comments.
 
-### 3. This README file explaining how to run and test the application.
+    ### 3. This README file explaining how to run and test the application.
 
 ## License
 
