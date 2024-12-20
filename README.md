@@ -37,13 +37,13 @@ customizable work and break durations, session tracking, and an intuitive user i
 
 ### 2. Settings Screen:
 
-- Input fields or sliders to customize focus and break durations.
+-  fields to customize focus and break durations.
 
 ### 3. Additional Details:
 
 - Clean and responsive design optimized for different screen sizes.
 
-- Visual distinction between work and break sessions (e.g., color changes).
+- Visual distinction between work and break sessions (e.g., label changes).
 
 ## Main packages used
 
